@@ -6,7 +6,7 @@ This is a Rails 5 application. You can [test the live demo](https://company-form
 
 Feel free to fork, reuse, copy, redistribute... Anything useful for you.
 
-# Dependencies
+## Dependencies
 
 This project uses Ruby 2.4.0.
 
@@ -25,20 +25,20 @@ bundle install --without db
 
 More about installing a development environment: [http://guides.rubyonrails.org/development_dependencies_install.html](http://guides.rubyonrails.org/development_dependencies_install.html)
 
-# Getting started
+## Getting started
 
-## Clone this project
+### Clone this project
 
 ```shell
 git clone https://github.com/sebastiencarceles/company_form_autocomplete.git
 cd company_form_autocomplete
 ```
 
-## Account
+### Account
 
 Create your account for free on [Companydata.co](https://www.companydata.co). You will be given an API Key.
 
-## API Key
+### API Key
 
 Create the file `config/application.yml` and copy-paste your API Key into this file:
 
@@ -46,7 +46,7 @@ Create the file `config/application.yml` and copy-paste your API Key into this f
 COMPANYDATA_API_KEY: MyAwesomeKey
 ```
 
-## Run it
+### Run the server and test
 
 ```shell
 rails server
