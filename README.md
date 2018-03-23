@@ -2,9 +2,9 @@
 
 This is a sample project to demonstrate how to automatically fill in a company form thanks to [Companydata.co](https://www.companydata.co).
 
-This is a Rails 5 application.
+This is a Rails 5 application. You can [test the live demo](https://company-form-autocomplete.herokuapp.com/).
 
-Feel free to fork, reuse, copy, redistribute... Anything usefull for you.
+Feel free to fork, reuse, copy, redistribute... Anything useful for you.
 
 # Dependencies
 
@@ -36,7 +36,7 @@ cd company_form_autocomplete
 
 ## Account
 
-Create your account on [Companydata.co](https://www.companydata.co). You will be given an API Key.
+Create your account for free on [Companydata.co](https://www.companydata.co). You will be given an API Key.
 
 ## API Key
 
