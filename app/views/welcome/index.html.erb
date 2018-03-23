@@ -1,4 +1,17 @@
-<h2>Hello World</h2>
 <p>
-  The time is now: <%= Time.now %>
+  Let's say you are a lambda user, which has been asked to fill in this company form. Copy-paste a valid french registration or VAT number (for example "FR53523895688") and the magic happens.
+</p>
+
+<h3>Company form</h3>
+<%= form_for :search, url: search_path, remote: true do |f| %>
+  <%= f.text_field :query, required: true, placeholder: "VAT or registration number" %>
+  <%= f.submit "Go!" %>
+<% end %>
+
+<h3>More about this app</h3>
+<p>
+  This is a sample project to demonstrate how to automatically fill in a company form thanks to <%= link_to "Companydata.co", "https://www.companydata.co" %>.
+</p>
+<p>
+  Source code is available on <%= link_to "GitHub", "https://github.com/sebastiencarceles/company_form_autocomplete" %>.
 </p>

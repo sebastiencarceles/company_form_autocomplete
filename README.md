@@ -40,9 +40,10 @@ Create your account for free on [Companydata.co](https://www.companydata.co). Yo
 
 ### API Key
 
-Create the file `config/application.yml` and copy-paste your API Key into this file:
+Create the file `config/application.yml` and copy-paste the email you used to register and your API Key into this file:
 
 ```yml
+COMPANYDATA_ACCOUNT: my.email@domain.com
 COMPANYDATA_API_KEY: MyAwesomeKey
 ```
 
@@ -52,4 +53,4 @@ COMPANYDATA_API_KEY: MyAwesomeKey
 rails server
 ```
 
-Open your browser at [localhost:3000](http://localhost:3000) and test with a french registration number or VAT number. For example: `FR58828022053`.
+Open your browser at [localhost:3000](http://localhost:3000) and test with a french registration number or VAT number. For example: `FR53523895688`.
