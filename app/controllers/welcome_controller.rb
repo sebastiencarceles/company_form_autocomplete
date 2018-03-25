@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class WelcomeController < ApplicationController
-
   def search
     uri = URI.parse("https://www.companydata.co/api/v1/companies/#{search_params[:query]}")
     http = Net::HTTP.new(uri.host, uri.port)

@@ -58,4 +58,7 @@ gem "jquery-rails"
 # Manage environment variables
 gem "figaro"
 
+# CSS
+gem "milligram"
+
 ruby "2.4.0"
