@@ -1,11 +1,11 @@
+$("#search_smooth_name").val("");
+$("#search_legal_form").val("");
+$("#search_staff").val("");  
+$("#search_presentation").val("");  
+$("#search_address").val("");  
+$("#search_founded_at").val("");  
 <% if @company.nil? %>
   alert("Oops, no company found");
-  $("#search_smooth_name").val("");
-  $("#search_legal_form").val("");
-  $("#search_staff").val("");  
-  $("#search_presentation").val("");  
-  $("#search_address").val("");  
-  $("#search_founded_at").val("");  
 <% else %>
   $("#search_smooth_name").val("<%= @company['smooth_name'] %>");
   $("#search_legal_form").val("<%= @company['legal_form'] %>");  
