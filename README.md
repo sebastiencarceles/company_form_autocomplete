@@ -53,4 +53,4 @@ COMPANYDATA_API_KEY: MyAwesomeKey
 rails server
 ```
 
-Open your browser at [localhost:3000](http://localhost:3000) and test with a french registration number or VAT number. For example: `FR53523895688`.
+Open your browser at [localhost:3000](http://localhost:3000) and test with a french registration number or VAT number. For example: `FR19809743263`.

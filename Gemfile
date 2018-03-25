@@ -61,4 +61,7 @@ gem "figaro"
 # CSS
 gem "milligram"
 
+# Forms
+gem "simple_form"
+
 ruby "2.4.0"

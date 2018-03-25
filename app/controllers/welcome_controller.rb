@@ -10,6 +10,7 @@ class WelcomeController < ApplicationController
     response = http.request(request)
 
     @company = response.code == "200" ? JSON.parse(response.body) : nil
+    pp @company
   end
 
   private

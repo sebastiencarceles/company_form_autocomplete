@@ -2,7 +2,15 @@
   alert("Oops, no company found");
   $("#search_smooth_name").val();
   $("#search_legal_form").val();
+  $("#search_staff").val();  
+  $("#search_presentation").val();  
+  $("#search_address").val();  
+  $("#search_founded_at").val();  
 <% else %>
   $("#search_smooth_name").val("<%= @company['smooth_name'] %>");
   $("#search_legal_form").val("<%= @company['legal_form'] %>");  
+  $("#search_staff").val("<%= @company['staff'] %>");  
+  $("#search_presentation").val("<%= @company['presentation'] %>");  
+  $("#search_address").val("<%= @company['address'] %>");  
+  $("#search_founded_at").val("<%= @company['founded_at'] %>");  
 <% end %>
