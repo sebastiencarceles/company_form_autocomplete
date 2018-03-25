@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class WelcomeController < ApplicationController
+
   def search
     uri = URI.parse("https://www.companydata.co/api/v1/companies/#{search_params[:query]}")
     http = Net::HTTP.new(uri.host, uri.port)
@@ -9,8 +10,7 @@ class WelcomeController < ApplicationController
     http.use_ssl = true
     response = http.request(request)
 
-    puts response.code # should be 200
-    puts JSON.parse(response.body) # parsed result: hash
+    @company = response.code == "200" ? JSON.parse(response.body) : nil
   end
 
   private

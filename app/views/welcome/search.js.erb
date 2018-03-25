@@ -1,0 +1,8 @@
+<% if @company.nil? %>
+  alert("Oops, no company found");
+  $("#search_smooth_name").val();
+  $("#search_legal_form").val();
+<% else %>
+  $("#search_smooth_name").val("<%= @company['smooth_name'] %>");
+  $("#search_legal_form").val("<%= @company['legal_form'] %>");  
+<% end %>

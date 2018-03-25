@@ -5,7 +5,10 @@
 <h3>Company form</h3>
 <%= form_for :search, url: search_path, remote: true do |f| %>
   <%= f.text_field :query, required: true, placeholder: "VAT or registration number" %>
-  <%= f.submit "Go!" %>
+  <%= f.submit "Go!" %><br /><br />
+
+  <%= f.text_field :smooth_name %><br />
+  <%= f.text_field :legal_form %><br />
 <% end %>
 
 <h3>More about this app</h3>
