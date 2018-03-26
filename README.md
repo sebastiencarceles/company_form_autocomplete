@@ -1,3 +1,6 @@
+![Demo gif](https://github.com/sebastiencarceles/company_form_autocomplete/blob/master/demo.gif "Autocomplete is awesome")
+
+
 # Company form autocomplete
 
 This is a sample project to demonstrate how to automatically fill in a company form thanks to [Companydata.co](https://www.companydata.co).
