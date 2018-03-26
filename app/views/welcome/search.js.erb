@@ -1,4 +1,6 @@
-$("#result_smooth_name").val("");
+$("#result_name").val("");
+$("#result_full_registration_number").val("");
+$("#result_vat_number").val("");
 $("#result_legal_form").val("");
 $("#result_staff").val("");  
 $("#result_presentation").val("");  
@@ -7,7 +9,9 @@ $("#result_founded_at").val("");
 <% if @company.nil? %>
   alert("Oops, no company found");
 <% else %>
-  $("#result_smooth_name").val("<%= @company['smooth_name']&.html_safe %>");
+  $("#result_name").val("<%= @company['smooth_name']&.html_safe %>");
+  $("#result_full_registration_number").val("<%= @company['registration_1']&.html_safe %>" + " " + "<%= @company['registration_2']&.html_safe %>");
+  $("#result_vat_number").val("<%= @company['vat_number']&.html_safe %>");
   $("#result_legal_form").val("<%= @company['legal_form']&.html_safe %>");  
   $("#result_staff").val("<%= @company['staff']&.html_safe %>");  
   $("#result_presentation").val("<%= @company['presentation']&.html_safe %>");  

@@ -24,7 +24,9 @@
       label_html: { class: "column column-25" }, 
       input_html: { class: "column column-50" } 
     } do |f| %>
-    <%= f.input :smooth_name %>
+    <%= f.input :name %>
+    <%= f.input :full_registration_number %>
+    <%= f.input :vat_number %>    
     <%= f.input :legal_form %>
     <%= f.input :staff %>
     <%= f.input :presentation %>
