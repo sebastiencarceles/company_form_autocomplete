@@ -1,16 +1,16 @@
-$("#search_smooth_name").val("");
-$("#search_legal_form").val("");
-$("#search_staff").val("");  
-$("#search_presentation").val("");  
-$("#search_address").val("");  
-$("#search_founded_at").val("");  
+$("#result_smooth_name").val("");
+$("#result_legal_form").val("");
+$("#result_staff").val("");  
+$("#result_presentation").val("");  
+$("#result_address").val("");  
+$("#result_founded_at").val("");  
 <% if @company.nil? %>
   alert("Oops, no company found");
 <% else %>
-  $("#search_smooth_name").val("<%= @company['smooth_name'] %>");
-  $("#search_legal_form").val("<%= @company['legal_form'] %>");  
-  $("#search_staff").val("<%= @company['staff'] %>");  
-  $("#search_presentation").val("<%= @company['presentation'] %>");  
-  $("#search_address").val("<%= @company['address'] %>");  
-  $("#search_founded_at").val("<%= @company['founded_at'] %>");  
+  $("#result_smooth_name").val("<%= @company['smooth_name']&.html_safe %>");
+  $("#result_legal_form").val("<%= @company['legal_form']&.html_safe %>");  
+  $("#result_staff").val("<%= @company['staff']&.html_safe %>");  
+  $("#result_presentation").val("<%= @company['presentation']&.html_safe %>");  
+  $("#result_address").val("<%= @company['address']&.html_safe %>");  
+  $("#result_founded_at").val("<%= @company['founded_at']&.html_safe %>");  
 <% end %>

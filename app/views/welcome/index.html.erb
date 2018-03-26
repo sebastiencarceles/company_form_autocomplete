@@ -1,23 +1,46 @@
-<h3>Company form</h3>
-<p>
-  Let's say you are a lambda user, which has been asked to fill in this company form. Copy-paste a valid french registration or VAT number (for example "FR60818025751") and the magic happens.
-</p>
-<%= simple_form_for :search, url: search_path, remote: true do |f| %>
-  <%= f.input :query, required: true %>
-  <%= f.button :submit, "Go!" %><br /><br />
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <h3>Company form</h3>
+      <p>
+        Let's say you are a lambda user, which has been asked to fill in this company form. Copy-paste a valid french registration or VAT number (for example "FR60818025751") and the magic happens.
+      </p>
+    </div>
+  </div>
 
-  <%= f.input :smooth_name, required: false %>
-  <%= f.input :legal_form, required: false %>
-  <%= f.input :staff, required: false %>
-  <%= f.input :presentation, required: false %>
-  <%= f.input :address, required: false %>
-  <%= f.input :founded_at, required: false %>
-<% end %>
+  <%= simple_form_for :search, url: search_path, remote: true, defaults: {
+      required: true, 
+      wrapper_html: { class: "row v-space-1" }, 
+      label_html: { class: "column column-25" }, 
+      input_html: { class: "column column-50" } 
+    } do |f| %>
+    <%= f.input :query %>
+    <%= f.button :submit, "Go!", class: "column column-25" %>
+  <% end %>
 
-<h3>More about this app</h3>
-<p>
-  This is a sample project to demonstrate how to automatically fill in a company form thanks to <%= link_to "Companydata.co", "https://www.companydata.co" %>.
-</p>
-<p>
-  Source code is available on <%= link_to "GitHub", "https://github.com/sebastiencarceles/company_form_autocomplete" %>.
-</p>
+  <%= simple_form_for :result, url: nil, defaults: { 
+      required: false, 
+      wrapper_html: { class: "row v-space-1" }, 
+      label_html: { class: "column column-25" }, 
+      input_html: { class: "column column-50" } 
+    } do |f| %>
+    <%= f.input :smooth_name %>
+    <%= f.input :legal_form %>
+    <%= f.input :staff %>
+    <%= f.input :presentation %>
+    <%= f.input :address %>
+    <%= f.input :founded_at %>
+  <% end %>
+  
+  <div class="row">
+    <div class="column">
+      <h3>More about this app</h3>
+      <p>
+        This is a sample project to demonstrate how to automatically fill in a company form thanks to <%= link_to "Companydata.co", "https://www.companydata.co" %>.
+      </p>
+      <p>
+        Source code is available on <%= link_to "GitHub", "https://github.com/sebastiencarceles/company_form_autocomplete" %>.
+      </p>
+    </div>
+  </div>
+</div>
