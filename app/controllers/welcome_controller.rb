@@ -5,7 +5,7 @@ class WelcomeController < ApplicationController
     uri = URI.parse("https://www.companydata.co/api/v1/companies/#{search_params[:query]}")
     http = Net::HTTP.new(uri.host, uri.port)
     request = Net::HTTP::Get.new(uri.request_uri)
-    request.basic_auth(ENV["COMPANYDATA_API_KEY"], "")
+    request.basic_auth(Figaro.env.companydata_api_key, "")
     http.use_ssl = true
     response = http.request(request)
 
