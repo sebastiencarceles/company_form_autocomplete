@@ -64,7 +64,5 @@ gem "milligram"
 # Forms
 gem "simple_form"
 
-gem "figaro"
-
 ruby "2.4.0"
 
